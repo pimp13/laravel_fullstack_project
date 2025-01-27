@@ -38,5 +38,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+// Authentication Routes
 require_once __DIR__ . '/auth.php';
+
+// ControlPanel Routes
 require_once __DIR__ . '/cp.php';
